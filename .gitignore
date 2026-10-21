@@ -2,4 +2,4 @@
 *.app
 .DS_Store
 # 图标版权来源未确认，默认不入库；放在本地即可参与构建
-AppIcon.icns
+/AppIcon.icns
