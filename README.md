@@ -22,7 +22,6 @@ cd TypeByHand
 open TypeByHand.app
 ```
 
-可选：在项目根目录放一个 `AppIcon.icns`，构建时会自动作为应用图标。
 
 ## 使用
 
@@ -48,3 +47,5 @@ open TypeByHand.app
 ## 许可证
 
 [MIT](LICENSE)
+
+应用图标基于 [Phosphor Icons](https://github.com/phosphor-icons/core)（MIT）的 `keyboard` 图标制作，详见 [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)。

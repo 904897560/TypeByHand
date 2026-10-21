@@ -9,9 +9,9 @@ rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/TypeByHand"
 cp Info.plist "$APP/Contents/Info.plist"
-# 图标可选：本地放一个 AppIcon.icns 即可
-if [ -f AppIcon.icns ]; then
-  cp AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
+# 图标：优先使用仓库内的 Resources/AppIcon.icns
+if [ -f Resources/AppIcon.icns ]; then
+  cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 fi
 codesign --force --sign - "$APP"
 echo "built: $APP"
